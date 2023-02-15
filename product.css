@@ -1,0 +1,77 @@
+/* __________________________ one product site ____________________________*/
+
+h1 {
+  font-family: Khmer MN;
+  font-weight: 100;
+  color: #707070;
+}
+
+p {
+  font-family: Montserrat;
+  color: #707070;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .div1 {
+    grid-column: 2/3;
+    margin-top: 100px;
+  }
+
+  .div2 {
+    grid-column: 3/4;
+    margin-top: 110px;
+    margin-left: 10%;
+  }
+
+  .productimg {
+    max-width: 100%;
+    border: solid 2px #a6a29a;
+  }
+
+  .bot {
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .div1 {
+    grid-column: 1/2;
+    margin-top: 30px;
+  }
+
+  .div2 {
+    grid-column: 1/2;
+  }
+
+  .productimg {
+    max-width: 60%;
+    border: solid 2px #a6a29a;
+  }
+
+  main {
+    margin: 15%;
+  }
+  .bot {
+    margin-top: 5%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
