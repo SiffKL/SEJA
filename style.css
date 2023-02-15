@@ -1,0 +1,71 @@
+/* ______________________    Navigation styling   _____________________*/
+
+header {
+  background-color: #e8e9e6;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+}
+
+#logo {
+  height: 100px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#linav {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 3rem;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #707070;
+  list-style: none;
+}
+
+li:hover {
+  color: #707070;
+  text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #707070;
+  text-decoration: none;
+}
+
+.searchsvg {
+  margin-left: 15px;
+}
+
+#icons {
+  display: flex;
+  width: 4%;
+  scale: 0.8;
+  align-items: center;
+}
+
+#search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchjpeg {
+  width: 50%;
+}
+
+/*________________________________________________________________________*/

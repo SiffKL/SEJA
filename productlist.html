@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Liste</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Product Liste</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img id="logo" src="SVG/Artboard 1.svg" alt="SEJA logo"
+        /></a>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Products</h1>
-    <article class="grid">
-      <template id="smallProductTemplate">
-        <article class="product">
-          <img src="https://sejammd-d3cb.restdb.io/media/63e9fca3aa86075000050c6c" alt="Ring" />
-          <h2>Flame Earrings Big</h2>
-          <h2 class="price"> <span>Prev</span>759 DKK</h2>
-          <h3 class="subtle">Earrings | Women</h3>
-          <div class="discounted">
-            <p>Now 379,5 DKK</p>
-            <p>-50%</p>
-          </div>
-          <h2 class="material">Sterling Silver</h2>
-          <button><a class="buy_now" href="product.html">Buy Now</a></button>
-        </article>
-      </template>
-    </article>
-  </main>
-  <footer></footer>
-  <script src="productlist.js"></script>
-</body>
+        <ul id="linav">
+          <li><a href="category.html">Category</a></li>
+          <li><a href="productlist.html">All products</a></li>
+          <li><a href="productlist.html">Sale</a></li>
+          <li><a href="productlist.html">Bestsellers</a></li>
+        </ul>
 
+        <div id="search">
+          <img class="searchjpeg" src="searchjpeg.jpg" alt="search" />
+        </div>
+        <div id="icons">
+          <img src="SVG/profilsvg.svg" alt="profil icon" />
+        </div>
+        <div id="icons">
+          <a href="product.html"
+            ><img src="SVG/kurvsvg.svg" alt="basket icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Products</h1>
+      <article class="grid">
+        <template id="smallProductTemplate">
+          <article class="product">
+            <img
+              src="https://sejammd-d3cb.restdb.io/media/63e9fca3aa86075000050c6c"
+              alt="Ring"
+            />
+            <h2>Flame Earrings Big</h2>
+            <h2 class="price"><span>Prev</span>759 DKK</h2>
+            <h3 class="subtle">Earrings | Women</h3>
+            <div class="discounted">
+              <p>Now 379,5 DKK</p>
+              <p>-50%</p>
+            </div>
+            <h2 class="material">Sterling Silver</h2>
+            <button><a class="buy_now" href="product.html">Buy Now</a></button>
+          </article>
+        </template>
+      </article>
+    </main>
+    <footer></footer>
+    <script src="productlist.js"></script>
+  </body>
 </html>
