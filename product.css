@@ -31,7 +31,6 @@ h1 {
   .div2 {
     grid-column: 4/6;
     margin-top: 110px;
-    margin-left: 10%;
   }
 
   .productimg {
@@ -45,7 +44,7 @@ h1 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
