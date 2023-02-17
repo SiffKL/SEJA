@@ -4,19 +4,48 @@ h1 {
   font-family: Khmer MN;
   font-weight: 100;
   color: #707070;
+  margin-bottom: 0;
 }
 
-p {
+p,
+label {
   font-family: Montserrat;
   color: #707070;
-  font-size: 15px;
-  line-height: 35px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
+select {
+  border-radius: 5%;
+  border: 0.7px solid gray;
+  width: 100px;
+  margin-left: 10px;
+  color: #707070;
+  background-color: white;
+  padding: 7px;
+}
+
+.action-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.action-wrapper input {
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  width: 100px;
+  margin-left: 10px;
+  color: #707070;
+  background-color: white;
+  padding: 7px;
+}
 @media (min-width: 800px) {
   .grid {
     display: grid;
@@ -24,17 +53,20 @@ h1 {
   }
 
   .div1 {
+    display: flex;
     grid-column: 2/4;
-    margin-top: 100px;
+    margin-top: 80px;
+    justify-content: end;
   }
 
   .div2 {
     grid-column: 4/6;
-    margin-top: 110px;
+    margin-top: 100px;
+    margin-left: 20px;
   }
 
   .productimg {
-    max-width: 80%;
+    width: 350px;
     border: solid 2px #a6a29a;
   }
 
@@ -68,9 +100,13 @@ h1 {
     margin: 15%;
   }
   .bot {
-    margin-top: 5%;
+    margin: 40px;
   }
   h1 {
     font-size: 25px;
+  }
+
+  .searchjpeg {
+    width: 0px;
   }
 }

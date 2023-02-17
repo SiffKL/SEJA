@@ -18,13 +18,15 @@
 
         <ul id="linav">
           <li><a href="category.html">Category</a></li>
-          <li><a href="productlist.html">All products</a></li>
+          <li><a href="productlist.html">Products</a></li>
           <li><a href="productlist.html">Sale</a></li>
           <li><a href="productlist.html">Bestsellers</a></li>
         </ul>
 
-        <div id="search">
-          <img class="searchjpeg" src="searchjpeg.jpg" alt="search" />
+        <div class="action-wrapper"><div id="search">
+          <form>
+            <label> <input placeholder="Search" type="search"></label>
+          </form>
         </div>
         <div id="icons">
           <img src="SVG/profilsvg.svg" alt="profil icon" />
@@ -34,13 +36,14 @@
             ><img src="SVG/kurvsvg.svg" alt="basket icon"
           /></a>
         </div>
+      </div>
       </nav>
     </header>
     <main>
       <article class="grid">
         <!-- <template id="oneproducttemplate"> -->
           <div class="div1" >
-          <article class="product">
+        
             <img class="productimg"
               
               src="guldring.jpg"
@@ -54,11 +57,24 @@
                 <p></p>
                 <p></p>
               </div>
-              <p class="price">759 DKK</p>
+              <div class="productinformation"><p class="price">759 DKK</p>
             <p class="subtle">Earrings | Women</p>
             <p class="brandname">SEJA</p>
-          
             <p class="material">Sterling Silver<p>
+            </div>
+              <form>
+                <label>
+                  Choose size
+                  <select name="size">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                  </select>
+                </label>
+              </form>
+
             <img class="bot" src="SVG/bot.svg" alt="buynowbot">
           </div>
         </div>
