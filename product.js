@@ -11,9 +11,10 @@ function showProduct(product) {
 
   document.querySelector(".gender").textContent = product.gender;
 
-  document.querySelector(".price").textContent = product.price;
+  document.querySelector(".price").textContent = product.price + "DKK";
 
-  document.querySelector(".discounted").textContent = product.discount;
+  document.querySelector(".discounted").textContent =
+    "-" + product.discount + "%";
 
   document.querySelector(
     ".productimg"
