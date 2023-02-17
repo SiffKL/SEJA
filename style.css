@@ -1,6 +1,7 @@
 /* ______________________    Navigation styling   _____________________*/
 
-header {
+header,
+footer {
   background-color: #e8e9e6;
 }
 
@@ -51,21 +52,59 @@ a:active {
   width: 100px;
 }
 
-/* #icons {
-  display: flex;
-  width: 4%;
-  scale: 0.8;
+/* __________________________ Footer styling ___________________ */
+
+html {
+  block-size: 100%;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
   align-items: center;
 }
 
-#search {
+.email {
   display: flex;
-  justify-content: end;
   align-items: center;
-  margin-right: 20px;
 }
 
-.searchjpeg {
-  width: 150px;
+.phone {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
 }
- */
+
+.email img,
+.phone img {
+  max-width: 40%;
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+.phone {
+  grid-row: 2;
+}
+
+footer h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer {
+  margin-top: 15%;
+}
