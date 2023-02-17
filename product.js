@@ -1,7 +1,18 @@
+console.log("product.js");
+
+// http://127.0.0.1:5501/product.html?_id=63e9fcc1aa86075000050c70
+
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("_id");
 
-fetch("https://sejammd-d3cb.restdb.io/rest/jewellery/" + id)
+// fetch("https://sejammd-d3cb.restdb.io/rest/jewellery/" + id)
+
+fetch("https://sejammd-d3cb.restdb.io/rest/jewellery/" + id, {
+  method: "get",
+  headers: {
+    "x-apikey": "63ef83b8478852088da683ec",
+  },
+})
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
@@ -16,9 +27,7 @@ function showProduct(product) {
   document.querySelector(".discounted").textContent =
     "-" + product.discount + "%";
 
-  document.querySelector(
-    ".productimg"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  document.querySelector(".productimg").src = `img/${product.image}`;
 }
 
 // ______________ Product information ___________________
