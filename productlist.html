@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
     <title>Product Liste</title>
   </head>
 
@@ -18,7 +19,7 @@
 
         <ul id="linav">
           <li><a href="category.html">Category</a></li>
-          <li><a href="productlist.html">Products</a></li>
+          <li><a href="productlist.html">All products</a></li>
           <li><a href="productlist.html">Sale</a></li>
           <li><a href="productlist.html">Bestsellers</a></li>
         </ul>
@@ -27,7 +28,36 @@
           <img class="searchjpeg" src="searchjpeg.jpg" alt="search" />
         </div>
         <div id="icons">
-          <img src="SVG/profilsvg.svg" alt="profil icon" />
+          <button class="open-button" onclick="openForm()">
+            <img src="SVG/profilsvg.svg" alt="profil icon" />
+          </button>
+
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Close
+              </button>
+            </form>
+          </div>
         </div>
         <div id="icons">
           <a href="product.html"
@@ -53,26 +83,25 @@
               <p>-50%</p>
             </div>
             <h2 class="material">Sterling Silver</h2>
-            <button><a class="buy_now" href="product.html">Buy Now</a></button>
+            <button>
+              <a class="buy_now" href="product.html"
+                ><img src="SVG/bot.svg" alt="Buy button"
+              /></a>
+            </button>
           </article>
         </template>
       </article>
     </main>
-    <footer>
-      <div class="container">
-        <h1>Contact Information</h1>
-        <div class="contact-info">
-          <div class="email">
-            <img src="SVG/email.png" alt="Your Logo" />
-            <p>Email: SejaJewels@outlook.com</p>
-          </div>
-          <div class="phone">
-            <img src="SVG/phone.png" alt="Your Second Logo" />
-            <p>Phone: +45 36 24 72 55</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer></footer>
     <script src="productlist.js"></script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
   </body>
 </html>
