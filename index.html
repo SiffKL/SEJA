@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>SEJA</title>
   </head>
   <body>
@@ -37,23 +38,56 @@
     </header>
     <main>
       <div class="carousel">
-        <button class="carousel_btn">button</button>
-        <div class="carousel_container">
+        <button class="carousel_btn carousel_btn--left is-hidden">
+          <img src="img/arrow-btn-grey-1.svg" alt="arrow button left" />
+        </button>
+
+        <div class="carousel_track-container">
           <ul class="carousel_track">
-            <li class="carousel_slide">
-              <img src="" alt="" />
+            <li class="carousel_slide current-slide">
+              <img
+                class="carousel_img"
+                src="img/banner-pic1.webp"
+                alt="banner pic 1 seja"
+              />
             </li>
             <li class="carousel_slide">
-              <img src="" alt="" />
+              <img
+                class="carousel_img"
+                src="img/banner-pic2.webp"
+                alt="banner pic 2 seja"
+              />
             </li>
             <li class="carousel_slide">
-              <img src="" alt="" />
+              <img
+                class="carousel_img"
+                src="img/banner-pic3.webp"
+                alt="banner pic 3 seja"
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel_img"
+                src="img/banner-pic4.webp"
+                alt="banner pic 4 seja"
+              />
             </li>
           </ul>
         </div>
-        <button class="carousel_btn">button</button>
+
+        <button class="carousel_btn carousel_btn--right">
+          <img src="img/arrow-btn-grey.svg" alt="arrow button right" />
+        </button>
+
+        <div class="carousel_nav">
+          <button class="carousel_indicator current-slide"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+        </div>
       </div>
-      <div>
+
+      <!-- <div>
         <p>
           SEJA Jewels is a premier jewelry shop that provides high-quality and
           diverse styles of jewelry for any occasion. Our exceptional customer
@@ -63,9 +97,9 @@
           beautiful and durable. Come to SEJA Jewels for all your jewelry needs,
           whether it be a special gift or something for your own collection.
         </p>
-      </div>
+      </div> -->
     </main>
     <footer></footer>
-    <!-- <script src=""></script> -->
+    <script src="carousel.js"></script>
   </body>
 </html>
