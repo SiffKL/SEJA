@@ -1,7 +1,10 @@
-/* grid*/
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
-  gap: 10px;
-  margin: 5%;
+@media (min-width: 800px) {
+  /* grid*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 10px;
+    margin: 5%;
+  }
 }

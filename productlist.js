@@ -30,14 +30,16 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
-  copy.querySelector("h3").textContent = product.category;
   copy.querySelector(".price").textContent = product.price;
-  copy.querySelector(".subtle").textContent = product.articletype;
-  copy.querySelector(".discounted").textContent = product.discount;
+  copy.querySelector("h2").textContent = product.productname;
+  copy.querySelector(".subtle").textContent = product.gender;
+  copy.querySelector(".material").textContent = product.material;
+  copy.querySelector("img").imageContent = product.image;
+  // copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   //produktet er udsolgt
   if (product.soldout) {
-    copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector("article").classList.add("soldout");
   }
   copy.querySelector(".buy_now").setAttribute("href", `product.html?id=${product.id}`);
   //append
@@ -62,3 +64,14 @@ function showProduct(product) {
 //     </article>
 //   </template>
 // </article>
+
+// _id	"63e9fcc1aa86075000050c70"
+// image	"simple-circle-ring.webp"
+// material	"Sterling Silver"
+// price	465
+// productname	"Simple Circle Ring"
+// category	"Ring"
+// discount	0
+// gender	"Women"
+// soldout	false
+// brandname	"SEJA"
