@@ -26,6 +26,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  border: none;
   transition: transform 250ms ease-in;
 }
 
@@ -38,7 +39,12 @@
 
 /* -------- buttons -------- */
 
+/* button {
+  border: none;
+} */
+
 .carousel_btn {
+  border: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -69,8 +75,8 @@
 
 .carousel_indicator {
   border: 0;
-  border-radius: 50%;
-  width: 15px;
+  border-radius: 20px;
+  width: 50px;
   height: 15px;
   background: rgb(0, 0, 0, 0.3);
   margin: 0 12px;
