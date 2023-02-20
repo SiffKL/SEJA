@@ -34,7 +34,8 @@ function showProduct(product) {
   copy.querySelector("h2").textContent = product.productname;
   copy.querySelector(".subtle").textContent = product.gender;
   copy.querySelector(".material").textContent = product.material;
-  copy.querySelector("img").srcContent = product.image;
+  copy.querySelector(".productimg").src = `img/${product.image}`;
+  // copy.querySelector("img").srcContent = product.image;
   // copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   //produktet er udsolgt
