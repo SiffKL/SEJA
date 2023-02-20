@@ -29,28 +29,19 @@ select {
   padding: 7px;
 }
 
-.action-wrapper {
+.sale {
   display: flex;
-  justify-content: space-around;
-  margin-left: auto;
+  background-color: #af1010;
+
+  width: 25%;
+  font-size: 20px;
+  height: 40px;
   align-items: center;
-  gap: 1.5rem;
-  padding: 1rem;
-}
-.action-wrapper input {
-  border-radius: 5px;
-  border: 0.5px solid gray;
-  width: 100px;
-  margin-left: 10px;
-  color: #707070;
-  background-color: white;
-  padding: 7px;
+  justify-content: center;
 }
 
-.sale {
-  background-color: red;
-  width: 30%;
-  font-size: 20px;
+.discount p {
+  color: white;
 }
 /* kaldes i js hvis der er udsalg og givet streg over tidligere pris */
 .prevprice {
@@ -64,19 +55,21 @@ select {
 
 .soldout {
   background-color: white;
+  border: solid 2px #a6a29a;
   width: 150px;
   height: 5%;
   position: absolute;
   z-index: 1;
+  display: flex;
+  color: black;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
 }
 
-.soldoutp {
-  color: black;
-  /* background-color: white; */
-  margin: auto;
-}
-.soldoutp::before {
+.soldout::before {
   content: "Out of stock";
+  font-family: Montserrat;
 }
 
 @media (min-width: 800px) {
@@ -100,11 +93,12 @@ select {
 
   .productimg {
     width: 350px;
+    height: 500px;
     border: solid 2px #a6a29a;
   }
 
   .bot {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 25%;
   }
 }

@@ -1,6 +1,6 @@
 console.log("product.js");
 
-// http://127.0.0.1:5501/product.html?_id=63eb7dc5aa86075000058b66
+// Test link:  http://127.0.0.1:5501/product.html?_id=63eb7dc5aa86075000058b66
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("_id");
