@@ -40,7 +40,7 @@ function showProduct(product) {
 
   //produktet er udsolgt
   if (product.soldout) {
-    copy.querySelector("article").classList.add("soldout");
+    copy.querySelector("article").classList.add("soldOut");
   }
   copy.querySelector(".buy_now").setAttribute("href", `product.html?id=${product.id}`);
   //append

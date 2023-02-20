@@ -1,0 +1,110 @@
+/* ______________________    Navigation styling   _____________________*/
+
+header,
+footer {
+  background-color: #e8e9e6;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+}
+
+#logo {
+  height: 100px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#linav {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 8%;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #707070;
+  list-style: none;
+}
+
+li:hover {
+  color: #707070;
+  text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #707070;
+  text-decoration: none;
+}
+
+.searchsvg {
+  margin-left: 15x;
+  width: 100px;
+}
+
+/* __________________________ Footer styling ___________________ */
+
+html {
+  block-size: 100%;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.email img,
+.phone img {
+  max-width: 40%;
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+.phone {
+  grid-row: 2;
+}
+
+footer h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer {
+  margin-top: 15%;
+}
