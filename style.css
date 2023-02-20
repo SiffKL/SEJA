@@ -17,8 +17,10 @@ nav {
 
 #logo {
   height: 100px;
+  width: 100px;
   margin-left: 20%;
   margin-top: 10%;
+  filter: brightness(85%);
 }
 
 #linav {
@@ -29,7 +31,7 @@ nav {
 li {
   margin-right: 8%;
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 17px;
   /* color: #707070; */
   color: black;
   list-style: none;
@@ -60,8 +62,8 @@ a:active {
 }
 .action-wrapper input {
   border-radius: 5px;
-  border: 0.5px solid gray;
-  width: 130px;
+  border: 2px solid gray;
+  width: 140px;
   margin-left: 10px;
   color: #707070;
   background-color: white;
