@@ -1,13 +1,14 @@
+/*  -------- carousel div + track-container (hvor billederne ligger) --------*/
+
 .carousel {
+  aspect-ratio: 1920 / 691;
   position: relative;
-  height: 600px;
   width: 80%;
   margin: 0 auto;
 }
 
 .carousel_img {
   width: 100%;
-  /* height: 100%; */
   object-fit: cover;
 }
 
