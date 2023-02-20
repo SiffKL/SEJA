@@ -46,6 +46,39 @@ select {
   background-color: white;
   padding: 7px;
 }
+
+.sale {
+  background-color: red;
+  width: 30%;
+  font-size: 20px;
+}
+/* kaldes i js hvis der er udsalg og givet streg over tidligere pris */
+.prevprice {
+  text-decoration: line-through;
+}
+
+/* kaldes hvis udsolgt og giver mørkt overlay på billede */
+.overlay {
+  filter: brightness(60%);
+}
+
+.soldout {
+  background-color: white;
+  width: 150px;
+  height: 5%;
+  position: absolute;
+  z-index: 1;
+}
+
+.soldoutp {
+  color: black;
+  /* background-color: white; */
+  margin: auto;
+}
+.soldoutp::before {
+  content: "Out of stock";
+}
+
 @media (min-width: 800px) {
   .grid {
     display: grid;
