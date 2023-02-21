@@ -1,6 +1,7 @@
 /* ______________________    Navigation styling   _____________________*/
 
-header {
+header,
+footer {
   background-color: #e8e9e6;
 }
 
@@ -16,8 +17,10 @@ nav {
 
 #logo {
   height: 100px;
+  width: 100px;
   margin-left: 20%;
   margin-top: 10%;
+  filter: brightness(85%);
 }
 
 #linav {
@@ -26,15 +29,17 @@ nav {
 }
 
 li {
-  margin-right: 3rem;
+  margin-right: 8%;
   font-family: Montserrat;
-  font-size: 15px;
-  color: #707070;
+  font-size: 17px;
+  /* color: #707070; */
+  color: black;
   list-style: none;
 }
 
 li:hover {
-  color: #707070;
+  /* color: #707070; */
+  color: black;
   text-decoration: underline;
 }
 
@@ -42,30 +47,91 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #707070;
+  /* color: #707070; */
+  color: black;
   text-decoration: none;
 }
 
-.searchsvg {
-  margin-left: 15px;
+.action-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+.action-wrapper input {
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: 140px;
+  margin-left: 10px;
+  color: #707070;
+  background-color: white;
+  padding: 7px;
 }
 
-#icons {
-  display: flex;
-  width: 4%;
-  scale: 0.8;
+#icon1 img,
+#icon2 img {
+  height: 25px;
+  width: 25px;
+}
+/* __________________________ Footer styling ___________________ */
+
+html {
+  block-size: 100%;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
   align-items: center;
 }
 
-#search {
+.email {
   display: flex;
-  justify-content: end;
   align-items: center;
-  margin-right: 20px;
 }
 
-.searchjpeg {
-  width: 50%;
+.phone {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
-/*________________________________________________________________________*/
+.email img,
+.phone img {
+  /* max-width: 40%; */
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+.phone {
+  grid-row: 2;
+}
+
+footer h1 {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+footer p {
+  margin: 0;
+  font-size: 15px;
+  color: black;
+}
+
+footer {
+  margin-top: 15%;
+}

@@ -1,0 +1,139 @@
+/* __________________________ one product site ____________________________*/
+
+h1 {
+  font-family: Khmer MN;
+  font-weight: 100;
+  color: #707070;
+  margin-bottom: 0;
+}
+
+p,
+label {
+  font-family: Montserrat;
+  color: #707070;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+select {
+  border-radius: 5%;
+  border: 0.7px solid gray;
+  width: 100px;
+  margin-left: 10px;
+  color: #707070;
+  background-color: white;
+  padding: 7px;
+}
+
+.sale {
+  display: flex;
+  background-color: #af1010;
+
+  width: 25%;
+  font-size: 20px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount p {
+  color: white;
+}
+/* kaldes i js hvis der er udsalg og givet streg over tidligere pris */
+.prevprice {
+  text-decoration: line-through;
+}
+
+/* kaldes hvis udsolgt og giver mørkt overlay på billede */
+.overlay {
+  filter: brightness(60%);
+}
+
+.soldout {
+  background-color: white;
+  border: solid 2px #a6a29a;
+  width: 150px;
+  height: 5%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  color: black;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.soldout::before {
+  content: "Out of stock";
+  font-family: Montserrat;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .div1 {
+    display: flex;
+    grid-column: 2/4;
+    margin-top: 80px;
+    justify-content: end;
+  }
+
+  .div2 {
+    grid-column: 4/6;
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .productimg {
+    width: 350px;
+    height: 500px;
+    border: solid 2px #a6a29a;
+  }
+
+  .bot {
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .div1 {
+    grid-column: 1/2;
+    margin-top: 30px;
+  }
+
+  .div2 {
+    grid-column: 1/2;
+  }
+
+  .productimg {
+    max-width: 60%;
+    border: solid 2px #a6a29a;
+  }
+
+  main {
+    margin: 15%;
+  }
+  .bot {
+    margin: 40px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  .searchjpeg {
+    width: 0px;
+  }
+}

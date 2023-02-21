@@ -6,37 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
     <title>Product</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html"
+        <a  href="index.html"
           ><img id="logo" src="SVG/Artboard 1.svg" alt="SEJA logo"
         /></a>
 
         <ul id="linav">
           <li><a href="category.html">Category</a></li>
-          <li><a href="productlist.html">All products</a></li>
+          <li><a href="productlist.html">Products</a></li>
           <li><a href="productlist.html">Sale</a></li>
           <li><a href="productlist.html">Bestsellers</a></li>
         </ul>
 
-        <div id="search">
-          <img class="searchjpeg" src="searchjpeg.jpg" alt="search" />
+        <div class="action-wrapper"><div id="search">
+          <form>
+            <label> <input placeholder="Search" type="search"></label>
+          </form>
         </div>
-        <div id="icons">
+        <div id="icon1">
           <img src="SVG/profilsvg.svg" alt="profil icon" />
         </div>
-        <div id="icons">
+        <div id="icon2">
           <a href="product.html"
             ><img src="SVG/kurvsvg.svg" alt="basket icon"
           /></a>
         </div>
+      </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <article class="grid">
+ 
+          <div class="div1" >
+            <div class="soldout"><p class="soldoutp"></p></div>
+            <img class="productimg"
+              
+              src="img/flame-earrings-big-earrings.webp"
+              alt="Ring"
+            />
+           
+          </div>
+            <div class="div2">
+              
+              <h1>Product name</h1>
+                <div class="discount"><p ><span class="discounted"></span></p></div>
+                <p class="newprice"></p>
+              <div class="productinformation"><p class="price">XXX DKK</p>
+            <p> <span class="category">Category</span> | <span class="gender">Gender
+            </span></p>
+            <p class="brandname">Brandname</p>
+            <p class="material">Material<p>
+           
+              <form>
+                <label>
+                  Choose size
+                  <select name="size">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                  </select>
+                </label>
+              </form>
+
+            <img class="bot" src="SVG/bot.svg" alt="buynowbot">
+            </div>
+      </article>
+    </main>
+    <footer>
+      <div class="container">
+        <h1>Contact Information</h1>
+        <div class="contact-info">
+          <div class="email">
+            <img src="SVG/mail.svg" alt="Your Logo" />
+            <p>Email: SejaJewels@outlook.com</p>
+          </div>
+          <div class="phone">
+            <img src="SVG/phone.svg" alt="Your Second Logo" />
+            <p>Phone: +45 36 24 72 55</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="product.js"></script>
   </body>
 </html>
