@@ -3,7 +3,7 @@ console.log("product.js");
 // Test link:  http://127.0.0.1:5501/product.html?_id=63eb7dc5aa86075000058b66
 
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("_id");
+const id = urlParams.get("id");
 
 fetch("https://sejammd-d3cb.restdb.io/rest/jewellery/" + id, {
   method: "get",
