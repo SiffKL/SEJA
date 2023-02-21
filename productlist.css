@@ -25,16 +25,47 @@ h2 h3 p {
   line-height: 25px;
 }
 
-/* udsolgt styling */
-.soldOut img {
-  opacity: 0.5;
+.sale {
+  display: flex;
+  background-color: #af1010;
+
+  width: 25%;
+  font-size: 20px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
-.product section.soldOut::before {
-  content: "Sold Out";
-  position: absolute;
-  background-color: black;
+
+.discount p {
   color: white;
-  padding: 1rem;
+}
+/* kaldes i js hvis der er udsalg og givet streg over tidligere pris */
+.prevprice {
+  text-decoration: line-through;
+}
+
+/* kaldes hvis udsolgt og giver mørkt overlay på billede */
+.overlay {
+  filter: brightness(60%);
+}
+
+.soldout {
+  background-color: white;
+  border: solid 2px #a6a29a;
+  width: 150px;
+  height: 5%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  color: black;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.soldout::before {
+  content: "Out of stock";
+  font-family: Montserrat;
 }
 
 @media (min-width: 800px) {

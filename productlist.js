@@ -9,6 +9,7 @@ fetch("https://sejammd-d3cb.restdb.io/rest/jewellery", {
 
 function showProducts(products) {
   //looper og kalder showproduct
+  // products.forEach((product) => showProduct(product));
   products.forEach(showProduct);
 }
 
@@ -19,19 +20,42 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
-  copy.querySelector(".price").textContent = product.price;
-  copy.querySelector("h2").textContent = product.productname;
-  copy.querySelector(".subtle").textContent = product.gender;
+  copy.querySelector(".price").textContent = product.price + " DKK";
+  copy.querySelector("h1").textContent = product.productname;
+  copy.querySelector(".gender").textContent = product.gender;
+  copy.querySelector(".category").textContent = product.category;
+  copy.querySelector(".brandname").textContent = product.brandname;
   copy.querySelector(".material").textContent = product.material;
   copy.querySelector(".productimg").src = `img/${product.image}`;
+  copy
+    .querySelector(".buy_now")
+    .setAttribute("href", "product.html?id=" + product._id);
   // copy.querySelector("img").srcContent = product.image;
   // copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
-  //produktet er udsolgt
-  if (product.soldout) {
-    copy.querySelector("article").classList.add("soldOut");
+  //hvis udsalg
+  if (product.discount) {
+    copy.querySelector(".discount").classList.add("sale");
+    copy.querySelector(".discounted").textContent =
+      "- " + product.discount + " %";
+    copy.querySelector(".price").classList.add("prevprice");
+    const originalPrice = product.price;
+    const discountPercentage = product.discount;
+    const newprice = originalPrice * (discountPercentage / 100);
+    copy.querySelector(".newprice").textContent = "NOW " + newprice + " DKK";
+
+    // document.querySelector(".price").remove();
+  } else {
+    copy.querySelector(".newprice").remove();
   }
-  copy.querySelector(".buy_now").setAttribute("href", `product.html?id=${product.id}`);
+
+  //hvis udsolgt produkt
+  if (product.soldout) {
+    copy.querySelector(".productimg").classList.add("overlay");
+    // copy.querySelector(".soldout").classList.add(".soldoutp");
+  } else {
+    copy.querySelector(".soldout").remove();
+  }
   //append
   document.querySelector("main").appendChild(copy);
 }

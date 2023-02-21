@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="productlist.css" />
+    <title>Product Liste</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="popup.css" />
-  <link rel="stylesheet" href="productlist.css">
-  <title>Product Liste</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img id="logo" src="SVG/Artboard 1.svg" alt="SEJA logo"
+        /></a>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html"><img id="logo" src="SVG/Artboard 1.svg" alt="SEJA logo" /></a>
+        <ul id="linav">
+          <li><a href="category.html">Category</a></li>
+          <li><a href="productlist.html">Products</a></li>
+          <li><a href="productlist.html">Sale</a></li>
+          <li><a href="productlist.html">Bestsellers</a></li>
+        </ul>
 
-      <ul id="linav">
-        <li><a href="category.html">Category</a></li>
-        <li><a href="productlist.html">Products</a></li>
-        <li><a href="productlist.html">Sale</a></li>
-        <li><a href="productlist.html">Bestsellers</a></li>
-      </ul>
-
-      <div class="action-wrapper">
-        <div id="search">
-          <form>
-            <label> <input placeholder="Search" type="search" /></label>
-          </form>
-        </div>
-        <div id="icon1">
-          <button class="open-button" onclick="openForm()">
-            <img src="SVG/profilsvg.svg" alt="profil icon" />
-          </button>
-
-          <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-              <h1>Login</h1>
-
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required />
-
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required />
-
-              <button type="submit" class="btn">Login</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">
-                Close
-              </button>
+        <div class="action-wrapper">
+          <div id="search">
+            <form>
+              <label> <input placeholder="Search" type="search" /></label>
             </form>
           </div>
-          <div id="icon2">
-            <a href="product.html"><img src="SVG/kurvsvg.svg" alt="basket icon" /></a>
+          <div id="icon1">
+            <button class="open-button" onclick="openForm()">
+              <img src="SVG/profilsvg.svg" alt="profil icon" />
+            </button>
+
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  name="email"
+                  required
+                />
+
+                <label for="psw"><b>Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                  Close
+                </button>
+              </form>
+            </div>
+            <div id="icon2">
+              <a href="product.html"
+                ><img src="SVG/kurvsvg.svg" alt="basket icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h1>Products</h1>
+    <main class="grid">
+      
+        <template id="smallProductTemplate">
+          <article class="product">
+            <div class="soldout"><p class="soldoutp"></p></div>
+            <img
+              class="productimg"
+              src="img/flame-earrings-big-earrings.webp"
+              alt="Ring"
+            />
+            <h1>Product name</h1>
+            <div class="discount"><p ><span class="discounted"></span></p></div>
+            <p class="newprice"></p>
+          <div class="productinformation"><p class="price">XXX DKK</p>
+        <p> <span class="category">Category</span> | <span class="gender">Gender
+        </span></p>
+        <p class="brandname">Brandname</p>
+        <p class="material">Material<p>
+            <button>
+              <a class="buy_now" href="product.html"
+                ><img src="SVG/bot.svg" alt="Buy button"
+              /></a>
+            </button>
+          </article>
+        </template>
+      
+    </main>
+    <footer>
+      <div class="container">
+        <h1>Contact Information</h1>
+        <div class="contact-info">
+          <div class="email">
+            <img src="SVG/mail.svg" alt="Your Logo" />
+            <p>Email: SejaJewels@outlook.com</p>
+          </div>
+          <div class="phone">
+            <img src="SVG/phone.svg" alt="Your Second Logo" />
+            <p>Phone: +45 36 24 72 55</p>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <h1>Products</h1>
-  <main class="grid">
-    <article>
-      <template id="smallProductTemplate">
-        <article class="product">
-          <img class="productimg" src="img/flame-earrings-big-earrings.webp" alt="Ring" />
-          <h2>Flame Earrings Big</h2>
-          <h2 class="price"> <span>Prev</span>759 DKK</h2>
-          <h3 class="subtle">Earrings | Women</h3>
-          <div class="discounted">
-            <p>Now 379,5 DKK</p>
-            <p>-50%</p>
-          </div>
-          <h2 class="material">Sterling Silver</h2>
-          <button><a class="buy_now" href="product.html"><img src="SVG/bot.svg" alt="Buy button"></a></button>
-        </article>
-      </template>
-    </article>
-  </main>
-  <footer>
-    <div class="container">
-      <h1>Contact Information</h1>
-      <div class="contact-info">
-        <div class="email">
-          <img src="SVG/mail.svg" alt="Your Logo" />
-          <p>Email: SejaJewels@outlook.com</p>
-        </div>
-        <div class="phone">
-          <img src="SVG/phone.svg" alt="Your Second Logo" />
-          <p>Phone: +45 36 24 72 55</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="productlist.js"></script>
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
+    </footer>
+    <script src="productlist.js"></script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
 
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-  </script>
-</body>
-
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
