@@ -25,6 +25,14 @@ h2 h3 p {
   line-height: 25px;
 }
 
+/*---------- style til h1 under product card ------ */
+
+.product h1 {
+  text-align: left;
+  margin-left: 0;
+}
+/* -------------- ama og siff hejsa :) ----------- */
+
 .sale {
   display: flex;
   background-color: #af1010;
