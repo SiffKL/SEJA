@@ -1,0 +1,173 @@
+/*  -------- carousel div + track-container (hvor billederne ligger) --------*/
+
+.carousel h1 {
+  font-family: Khmer MN, Helvetica, sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+  color: #707070;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 0;
+}
+
+.carousel {
+  aspect-ratio: 1920 / 691;
+  height: 80%;
+  position: relative;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_track-container {
+  background-color: hotpink;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /* hidden så når vi klikker videre med js, så forsvinder den ikke */
+}
+
+.carousel_track {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* -------- buttons -------- */
+
+/* button {
+  border: none;
+} */
+
+.carousel_btn {
+  border: none;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.carousel_btn--left {
+  left: 0;
+}
+
+.carousel_btn--right {
+  right: 0;
+}
+
+.carousel_btn img {
+  width: 35px;
+}
+
+/* ------- carousel nav indicators ("dots")------ */
+
+.carousel_nav {
+  /* background: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 20px;
+  width: 50px;
+  height: 15px;
+  background: rgb(0, 0, 0, 0.2);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+  background: #707070;
+}
+/* ---- fjerne arrow knap ---- */
+.is-hidden {
+  display: none;
+}
+
+/* ------------------ text ------------------- */
+.p-containter-index p {
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #707070;
+  margin: 60px auto;
+  max-width: 1000px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+/* ------------- media quiries --------------- */
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 60%;
+  }
+
+  .carousel h1 {
+    font-size: 42px;
+    font-weight: 200;
+    top: 110%;
+    left: 0;
+    margin-left: 122px;
+  }
+
+  .carousel_btn {
+    top: 85%;
+  }
+
+  .carousel_indicator {
+    border: 0;
+    border-radius: 20px;
+    width: 25px;
+    height: 9px;
+    background: rgb(0, 0, 0, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel {
+    height: 90%;
+  }
+
+  .carousel h1 {
+    font-size: 67px;
+    font-weight: 200;
+    top: 9%;
+  }
+
+  .carousel_btn img {
+    height: 25px;
+  }
+  .carousel_indicator {
+    border: 0;
+    border-radius: 6px;
+    width: 50px;
+    height: 15px;
+    background: rgb(0, 0, 0, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+  }
+}
