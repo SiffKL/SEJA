@@ -1,9 +1,15 @@
-fetch("https://sejammd-d3cb.restdb.io/rest/jewellery", {
-  method: "get",
-  headers: {
-    "x-apikey": "63ef83b8478852088da683ec",
-  },
-})
+const urlParams = new URLSearchParams(window.location.search);
+const myCategory = urlParams.get("category");
+
+fetch(
+  `https://sejammd-d3cb.restdb.io/rest/jewellery?q={"category":"${myCategory}"}`,
+  {
+    method: "get",
+    headers: {
+      "x-apikey": "63ef83b8478852088da683ec",
+    },
+  }
+)
   .then((res) => res.json())
   .then(showProducts);
 
