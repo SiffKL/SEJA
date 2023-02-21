@@ -16,6 +16,15 @@ main {
   padding-top: 0%;
 }
 
+.cat_h1 {
+  margin-left: 11.5%;
+  font-family: Khmer MN, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  color: #707070;
+  margin-top: 16%;
+}
+
 .image-container img {
   border-radius: 50%;
   width: 100%;
@@ -87,6 +96,17 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
+  }
+
+  .cat_h1 {
+    font-family: Khmer MN, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    color: #707070;
+    margin-top: 11%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
   }
 
   .box-1 {
