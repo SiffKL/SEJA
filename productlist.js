@@ -1,6 +1,9 @@
-const myUrl = "https://sejammd-d3cb.restdb.io/home/db/sejammd-d3cb/cards/63e9f933aa8607500004fc68";
-
-fetch(myUrl)
+fetch("https://sejammd-d3cb.restdb.io/rest/jewellery", {
+  method: "get",
+  headers: {
+    "x-apikey": "63ef83b8478852088da683ec",
+  },
+})
   .then((res) => res.json())
   .then(showProducts);
 
@@ -16,16 +19,19 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
-  copy.querySelector("h3").textContent = product.category;
   copy.querySelector(".price").textContent = product.price;
-  copy.querySelector(".subtle").textContent = product.articletype;
-  copy.querySelector(".discounted").textContent = product.discount;
+  copy.querySelector("h2").textContent = product.productname;
+  copy.querySelector(".subtle").textContent = product.gender;
+  copy.querySelector(".material").textContent = product.material;
+  copy.querySelector(".productimg").src = `img/${product.image}`;
+  // copy.querySelector("img").srcContent = product.image;
+  // copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   //produktet er udsolgt
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
-  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
+  copy.querySelector(".buy_now").setAttribute("href", `product.html?id=${product.id}`);
   //append
   document.querySelector("main").appendChild(copy);
 }

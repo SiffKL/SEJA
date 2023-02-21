@@ -1,0 +1,55 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+main {
+  margin: 5%;
+}
+.productimg {
+  width: 100%;
+  border: solid 2px #a6a29a;
+}
+
+/* font styling */
+h1 {
+  font-family: Khmer MN;
+  font-size: 25px;
+  font-weight: 100;
+  color: #707070;
+  margin-left: 5%;
+}
+h2 h3 p {
+  font-family: Montserrat;
+  color: #707070;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+/* udsolgt styling */
+.soldOut img {
+  opacity: 0.5;
+}
+.product section.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 h3 p {
+    font-size: 25px;
+  }
+
+  /* grid*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 45px;
+    margin: 5%;
+  }
+}
