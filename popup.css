@@ -12,9 +12,10 @@
   display: none;
   position: fixed;
   top: 100px;
-  right: 11%;
+  left: 8%;
   z-index: 9;
-  width: 300px;
+  width: 240px;
+  border-radius: 10px;
   border: 1px solid #707070;
   font-family: Montserrat;
 }
