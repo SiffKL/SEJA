@@ -1,24 +1,5 @@
 /*  -------- carousel div + track-container (hvor billederne ligger) --------*/
 
-/* -- brugte før -- */
-/* .carousel {
-  aspect-ratio: 1920 / 691;
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-} */
-
-/*  ---- prøve ift. ændre pic banner.
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%; */
-
-/* -- brugte før -- */
-/* .carousel_img {
-  width: 100%;
-  object-fit: cover;
-} */
 .carousel h1 {
   font-family: Khmer MN, Helvetica, sans-serif;
   font-size: 44px;
@@ -35,7 +16,6 @@
 .carousel {
   aspect-ratio: 1920 / 691;
   height: 80%;
-  /* padding-top: 278%; */
   position: relative;
 }
 
@@ -144,29 +124,12 @@
     height: 60%;
   }
 
-  /*  --- maybe? (prøver at ændre billed skalering----- */
-  /* .carousel {
-    aspect-ratio: 1 / 1;
-    height: 80%;
-  
-    position: relative;
-  }
-
-  .carousel_img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carousel_img {
-    width: 181%;
-    height: 100%;
-    object-fit: fill;
-} */
-
   .carousel h1 {
-    font-size: 24px;
+    font-size: 42px;
     font-weight: 200;
-    top: 9%;
+    top: 110%;
+    left: 0;
+    margin-left: 122px;
   }
 
   .carousel_btn {
@@ -198,14 +161,13 @@
   .carousel_btn img {
     height: 25px;
   }
-
-  /* .carousel_indicator {
+  .carousel_indicator {
     border: 0;
-    border-radius: 20px;
-    width: 25px;
-    height: 9px;
+    border-radius: 6px;
+    width: 50px;
+    height: 15px;
     background: rgb(0, 0, 0, 0.3);
     margin: 0 12px;
     cursor: pointer;
-  } */
+  }
 }
