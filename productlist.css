@@ -90,5 +90,12 @@ h2 h3 p {
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
     gap: 45px;
     margin: 5%;
+    margin-left: 122px;
+    margin-right: 97px;
+  }
+
+  .overskrift {
+    margin-left: 45%;
+    margin-top: 5%;
   }
 }

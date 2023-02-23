@@ -8,6 +8,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="popup.css">
   <title>Product</title>
 </head>
 
@@ -26,15 +27,35 @@
       <div class="action-wrapper">
         <div id="search">
           <form>
-            <label> <input placeholder="Search" type="search"></label>
+            <label> <input placeholder="Search" type="search" /></label>
           </form>
         </div>
         <div id="icon1">
-          <img src="SVG/profilsvg.svg" alt="profil icon" />
+          <button class="open-button" onclick="openForm()">
+            <img src="SVG/profilsvg.svg" alt="profil icon" />
+          </button>
+
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required />
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required />
+
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Close
+              </button>
+            </form>
+          </div>
         </div>
         <div id="icon2">
           <a href="product.html"><img src="SVG/kurvsvg.svg" alt="basket icon" /></a>
         </div>
+
       </div>
     </nav>
   </header>
@@ -96,6 +117,15 @@
     </div>
   </footer>
   <script src="product.js"></script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </body>
 
 </html>

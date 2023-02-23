@@ -11,10 +11,10 @@ html {
   padding: 0px;
 }
 
-main {
+/* main {
   padding: 10%;
   padding-top: 0%;
-}
+} */
 
 .cat_h1 {
   margin-left: 11.5%;
@@ -177,6 +177,8 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 1fr 1fr 1fr;
     gap: 10px;
+    margin-left: 97px;
+    margin-right: 97px;
   }
 
   .box-1 {

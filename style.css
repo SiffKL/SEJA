@@ -1,64 +1,70 @@
 /* ______________________    Navigation styling   _____________________*/
-
+/*Nav-menu*/
+.web_menu {
+  display: none;
+}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 31px;
+  display: block;
+}
+.topnav a.icon {
+  position: absolute;
+  right: 2.5%;
+  top: 2.5%;
+  font-size: 70px;
+  color: #707070;
+}
+.topnav a:hover,
+.brand:hover {
+  color: black;
+}
+#search input {
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: 140px;
+  margin-left: 14px;
+  color: #707070;
+  background-color: white;
+  padding: 7px;
+}
 header,
 footer {
   background-color: #e8e9e6;
 }
-
 body {
   margin: 0;
 }
-
 nav {
   display: flex;
   height: 120px;
   width: 100%;
 }
-
 #logo {
   height: 100px;
   width: 100px;
-  margin-left: 20%;
-  margin-top: 10%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
   filter: brightness(85%);
 }
-
 #linav {
   display: flex;
   align-items: center;
 }
-
 li {
   margin-right: 8%;
   font-family: Montserrat;
   font-size: 17px;
-  /* color: #707070; */
   color: black;
   list-style: none;
-}
-
-li:hover {
-  /* color: #707070; */
-  color: black;
-  text-decoration: underline;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  /* color: #707070; */
-  color: black;
   text-decoration: none;
 }
-
 .action-wrapper {
   display: flex;
-  justify-content: space-around;
-  margin-left: auto;
   align-items: center;
   gap: 1.5rem;
-  padding: 2.5rem;
 }
 .action-wrapper input {
   border-radius: 5px;
@@ -69,12 +75,12 @@ a:active {
   background-color: white;
   padding: 7px;
 }
-
 #icon1 img,
 #icon2 img {
   height: 25px;
   width: 25px;
 }
+
 /* __________________________ Footer styling ___________________ */
 
 html {
@@ -134,4 +140,34 @@ footer p {
 
 footer {
   margin-top: 15%;
+}
+
+@media (min-width: 800px) {
+  /* ______________________    Navigation styling   _____________________*/
+  .topnav {
+    display: none;
+  }
+  .web_menu {
+    display: block;
+  }
+  #logo {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+  li:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .action-wrapper {
+    justify-content: space-around;
+    margin-left: auto;
+    padding: 2.5rem;
+  }
 }
