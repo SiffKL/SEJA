@@ -1,3 +1,23 @@
+/* -------------------- Fonts -----------------------*/
+p,
+a {
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Khmer NM";
+  src: url("fonts-seja/KhmerMN-01.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("fonts-seja/KhmerMN-Bold-02.ttf")
+      format("truetype"); /* BOLD Safari, Android, iOS */
+}
+
+h1,
+h2,
+h3 {
+  /* font: inherit; */
+  font-family: Khmer NM, Helvetica, sans-serif;
+}
+
 /* ______________________    Navigation styling   _____________________*/
 
 header,
