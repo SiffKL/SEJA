@@ -57,6 +57,18 @@ h2 h3 p {
   filter: brightness(60%);
 }
 
+.productinformation p {
+  line-height: 30px;
+}
+
+.material {
+  margin-bottom: 2%;
+}
+
+.newprice {
+  margin-top: 3%;
+}
+
 .soldout {
   background-color: white;
   border: solid 2px #a6a29a;
