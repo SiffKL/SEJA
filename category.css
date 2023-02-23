@@ -63,9 +63,9 @@ main {
   transform: translate(-50%, -50%);
   color: grey;
   text-shadow: 2px 2px 4px #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Khmer NM", Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -76,9 +76,9 @@ main {
   transform: translate(-50%, -50%);
   color: #d10000;
   text-shadow: 2px 2px 4px #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Khmer NM", Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
 }
 
