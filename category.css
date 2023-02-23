@@ -1,19 +1,12 @@
 /* Reset the viewport properties */
 * {
   margin: 0px;
-  padding: 0px;
-  padding-left: 0px;
   box-sizing: border-box;
 }
 
 html {
   block-size: 100%;
   padding: 0px;
-}
-
-main {
-  padding: 10%;
-  padding-top: 0%;
 }
 
 .cat_h1 {
@@ -177,6 +170,8 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 1fr 1fr 1fr;
     gap: 10px;
+    margin-left: 97px;
+    margin-right: 97px;
   }
 
   .box-1 {

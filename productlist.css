@@ -76,6 +76,14 @@ h2 h3 p {
   font-family: Montserrat;
 }
 
+.productinformation p {
+  line-height: 30px;
+}
+
+.material {
+  margin-bottom: 2%;
+}
+
 @media (min-width: 800px) {
   h1 {
     font-size: 35px;
@@ -90,5 +98,17 @@ h2 h3 p {
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
     gap: 45px;
     margin: 5%;
+    margin-left: 122px;
+    margin-right: 99px;
+  }
+
+  .overskrift {
+    margin-left: 122px;
+    margin-top: 4%;
+    margin-bottom: -3%;
+  }
+
+  #linav {
+    margin-left: 4%;
   }
 }
